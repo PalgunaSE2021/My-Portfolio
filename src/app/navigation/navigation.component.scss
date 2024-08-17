@@ -1,0 +1,7 @@
+.nav-list {
+  @apply pf-flex pf-flex-col;
+}
+
+.nav-list li {
+  @apply pf-text-transparent  pf-bg-gradient-to-r pf-text-gray-400 pf-mt-24-px pf-cursor-pointer;
+}

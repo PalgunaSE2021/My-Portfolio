@@ -1,0 +1,15 @@
+.about {
+  @apply pf-text-white  pf-flex pf-flex-col;
+}
+
+.name {
+  @apply pf-text-3xl pf-font-serif pf-font-extrabold pf-text-gray-400;
+}
+
+.role {
+  @apply pf-text-transparent pf-font-serif pf-bg-clip-text pf-bg-gradient-to-r pf-text-gray-400 pf-mt-24-px;
+}
+
+.bio {
+  @apply pf-font-serif pf-font-semibold pf-text-gray-400 pf-mt-24-px;
+}

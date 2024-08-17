@@ -1,0 +1,15 @@
+.header {
+  @apply pf-bg-gray-800 pf-text-white pf-py-4;
+}
+
+.logo {
+  @apply pf-text-2xl pf-font-bold;
+}
+
+.nav-list {
+  @apply pf-flex pf-space-x-6;
+}
+
+.nav-list li {
+  @apply pf-text-white pf-font-medium pf-cursor-pointer;
+}

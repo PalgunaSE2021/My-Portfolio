@@ -1,0 +1,36 @@
+<section id="projects-section">
+  <div class="pf-container">
+    <div *ngFor="let projectRow of projectRows" class="pf-row">
+      <p-card
+        *ngFor="let project of projectRow"
+        header="{{ project.name }}"
+        subheader="{{ project.technologies }}"
+        [styleClass]="'project-card'"
+        class="pf-mr-24-px pf-mt-48-px"
+      >
+        <ng-template pTemplate="header">
+          <img [src]="project.imageUrl" [alt]="project.name" class="pf-image" />
+        </ng-template>
+        <p class="pf-description">{{ project.description }}</p>
+        <ng-template pTemplate="footer">
+          <div class="pf-footer">
+            <a
+              [href]="project.websiteUrl"
+              pButton
+              label="Visit Website"
+              class="pf-button"
+              severity="primary"
+            ></a>
+            <a
+              [href]="project.codeUrl"
+              pButton
+              label="View Code"
+              class="pf-button"
+              severity="secondary"
+            ></a>
+          </div>
+        </ng-template>
+      </p-card>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,15 @@
+.hero {
+  @apply pf-text-white pf-flex pf-items-center pf-justify-around;
+}
+
+.hero-content {
+  @apply pf-text-center;
+}
+
+h1 {
+  @apply pf-text-5xl pf-font-bold pf-mb-4;
+}
+
+p {
+  @apply pf-text-lg pf-mb-8;
+}
