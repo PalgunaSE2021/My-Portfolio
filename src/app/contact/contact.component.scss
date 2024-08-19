@@ -1,3 +1,38 @@
 .icon {
   @apply pf-text-xl;
 }
+
+.fb-link {
+  &:hover {
+    @apply pf-text-blue-900;
+  }
+}
+
+.x-link {
+  &:hover {
+    @apply pf-text-blue-600;
+  }
+}
+.linkedin-link {
+  &:hover {
+    @apply pf-text-blue-900;
+  }
+}
+
+.git-link {
+  &:hover {
+    @apply pf-text-gray-700;
+  }
+}
+
+.insta-link {
+  &:hover {
+    @apply pf-text-pink-700;
+  }
+}
+
+.mail-link {
+  &:hover {
+    @apply pf-text-gray-600;
+  }
+}

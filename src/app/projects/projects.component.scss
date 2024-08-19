@@ -1,20 +1,23 @@
-#projects-section .pf-row {
-  @apply pf-flex pf-justify-between pf-mb-48-px pf-mr-24-px;
+.pf-container {
+  @apply pf-flex pf-flex-row  pf-gap-8; /* Center content, add padding */
 }
 
-#projects-section .pf-image {
-  @apply pf-w-72 pf-h-48 pf-object-cover;
+/* Image styling within the card */
+.pf-image {
+  @apply pf-w-full pf-flex; /* Full width, maintain aspect ratio, cover image, rounded top corners */
 }
 
-#projects-section .pf-description {
-  @apply pf-text-gray-700 pf-mb-2;
+/* Description styling */
+.pf-description {
+  @apply pf-text-start; /* Center text, padding, larger text, relaxed line spacing */
 }
 
-#projects-section .pf-footer {
-  @apply pf-flex pf-gap-3 pf-mt-1;
+/* Footer styling for buttons */
+.pf-footer {
+  @apply pf-flex pf-justify-center pf-gap-4 pf-py-4; /* Flexbox for buttons, centered, with spacing anda padding */
 }
 
 /* Button styling */
-#projects-section .pf-button {
-  @apply pf-w-full;
+.pf-button {
+  @apply pf-px-4 pf-py-2 pf-rounded pf-bg-blue-500 pf-text-white; /* Padding, rounded corners, background color, text color, hover effect */
 }
