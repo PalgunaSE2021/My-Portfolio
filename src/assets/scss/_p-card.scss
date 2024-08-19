@@ -1,5 +1,17 @@
-// .p-card {
-//   &.project-card {
-//     @apply pf-p-8-px pf-ml-24-px pf-rounded-8-px;
-//   }
-// }
+.p-card {
+  &.project-card {
+    @apply pf-bg-slate-800 pf-text-about-text-color pf-rounded-lg pf-shadow-lg  pf-rounded-12-px;
+
+    &:hover {
+      @apply pf-bg-card-hover pf-shadow-project-card-shadow;
+    }
+
+    .pf-image {
+      @apply pf-rounded-t-12-px;
+    }
+
+    .p-card-subtitle {
+      @apply pf-text-about-text-color pf-m-0;
+    }
+  }
+}

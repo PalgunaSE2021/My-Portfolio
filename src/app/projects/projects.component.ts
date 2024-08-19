@@ -19,52 +19,23 @@ interface Project {
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.scss',
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent {
   projects: Project[] = [
     {
       name: 'Todo-List',
       description: 'This is a brief description of Project 1.',
-      technologies: 'Stack used: Angular',
+      technologies: 'Technology used: Angular',
       imageUrl: 'assets/images/todo-list.png',
       websiteUrl: 'https://personal-todos-list.netlify.app/',
       codeUrl: 'https://github.com/PalgunaSE2021/todo-list',
     },
     {
-      name: 'Project 1',
+      name: 'Github-User-Search',
       description: 'This is a brief description of Project 1.',
-      technologies: 'Stack used: Angular',
-      imageUrl: 'img.jpg',
-      websiteUrl: 'https://project1.com',
-      codeUrl: 'https://github.com/username/project1',
-    },
-    {
-      name: 'Project 1',
-      description: 'This is a brief description of Project 1.',
-      technologies: 'Stack used: Angular',
-      imageUrl: 'img.jpg',
-      websiteUrl: 'https://project1.com',
-      codeUrl: 'https://github.com/username/project1',
-    },
-    {
-      name: 'Project 1',
-      description: 'This is a brief description of Project 1.',
-      technologies: 'Stack used: Angular',
-      imageUrl: 'img.jpg',
-      websiteUrl: 'https://project1.com',
-      codeUrl: 'https://github.com/username/project1',
+      technologies: 'Technology used: Angular',
+      imageUrl: 'assets/images/githubUserSearch.png',
+      websiteUrl: 'https://find-github-user-repos.netlify.app/',
+      codeUrl: 'https://github.com/PalgunaSE2021/githubUserSearch',
     },
   ];
-
-  projectRows: Project[][] = [];
-
-  ngOnInit() {
-    this.groupProjects();
-  }
-
-  groupProjects() {
-    const chunkSize = 2;
-    for (let i = 0; i < this.projects.length; i += chunkSize) {
-      this.projectRows.push(this.projects.slice(i, i + chunkSize));
-    }
-  }
 }
