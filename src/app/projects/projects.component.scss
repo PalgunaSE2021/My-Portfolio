@@ -9,12 +9,15 @@
 
 /* Description styling */
 .pf-description {
-  @apply pf-text-start; /* Center text, padding, larger text, relaxed line spacing */
+  @apply pf-text-start pf-mb--24-px; /* Center text, padding, larger text, relaxed line spacing */
 }
 
 /* Footer styling for buttons */
 .pf-footer {
-  @apply pf-flex pf-justify-center pf-gap-4 pf-py-4; /* Flexbox for buttons, centered, with spacing anda padding */
+  @apply pf-flex pf-justify-center pf-gap-4;
+  &:hover {
+    @apply pf-font-bold pf-bg-slate-700;
+  }
 }
 
 /* Button styling */
