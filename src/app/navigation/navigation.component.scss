@@ -3,9 +3,9 @@
 }
 
 .nav-list li {
-  @apply pf-text-transparent  pf-font-serif pf-font-semibold pf-text-gray-400 pf-mt-24-px pf-cursor-pointer;
+  @apply pf-text-transparent  pf-font-serif pf-font-black pf-text-blue-200  pf-cursor-pointer;
 
   &:hover {
-    @apply pf-font-bold pf-text-gray-200;
+    @apply pf-font-bold pf-text-gray-100;
   }
 }

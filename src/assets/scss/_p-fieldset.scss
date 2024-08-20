@@ -1,6 +1,6 @@
 .p-fieldset {
   &.custom-fieldset {
-    @apply pf-bg-slate-900 pf-border pf-border-slate-400 pf-pl-16-px pf-mr-24-px;
+    @apply pf-bg-slate-900 pf-border pf-border-slate-400 pf-pl-16-px pf-mr-24-px pf-mt-16-px;
 
     .p-fieldset-legend {
       @apply pf-px-4-px pf-bg-slate-900;
