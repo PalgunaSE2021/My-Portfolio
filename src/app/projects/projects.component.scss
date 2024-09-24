@@ -24,3 +24,19 @@
 .pf-button {
   @apply pf-px-4 pf-py-2 pf-rounded pf-bg-blue-500 pf-text-white; /* Padding, rounded corners, background color, text color, hover effect */
 }
+
+@media (max-width: 750px) {
+  .project-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 70px;
+  }
+
+  .pf-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+}

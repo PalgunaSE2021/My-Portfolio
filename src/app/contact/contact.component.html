@@ -1,51 +1,69 @@
 <div class="pf-flex pf-flex-col">
-  <div class="pf-flex pf-space-x-4 pf-mt-36-px">
+  <div class="pf-flex pf-space-x-4 pf-mt-36-px mobile-layout">
     <a
       href="https://www.facebook.com/yourprofile"
       target="_blank"
       rel="noopener noreferrer"
       class="pf-text-blue-600 pf-transition-colors pf-duration-300 fb-link"
+      (mouseenter)="showTooltip($event, 'Facebook')"
+      (mouseleave)="hideTooltip($event)"
     >
       <i class="fab fa-facebook-f fa-2x"></i>
+      <span class="tooltip-text">Facebook</span>
     </a>
     <a
       href="https://x.com/ManchalePalguna"
       target="_blank"
       rel="noopener noreferrer"
       class="pf-text-blue-400 pf-transition-colors pf-duration-300 x-link"
+      (mouseenter)="showTooltip($event, 'Twitter')"
+      (mouseleave)="hideTooltip($event)"
     >
       <i class="fab fa-twitter fa-2x"></i>
+      <span class="tooltip-text">Twitter</span>
     </a>
     <a
       href="https://www.linkedin.com/in/palguna-manchale-a4693422a/"
       target="_blank"
       rel="noopener noreferrer"
       class="pf-text-blue-700 pf-transition-colors pf-duration-300 linkedin-link"
+      (mouseenter)="showTooltip($event, 'Linkedin')"
+      (mouseleave)="hideTooltip($event)"
     >
       <i class="fab fa-linkedin-in fa-2x"></i>
+      <span class="tooltip-text">Linkedin</span>
     </a>
     <a
       href="https://github.com/PalgunaSE2021"
       target="_blank"
       rel="noopener noreferrer"
       class="pf-text-gray-600 pf-transition-colors pf-duration-300 git-link"
+      (mouseenter)="showTooltip($event, 'github')"
+      (mouseleave)="hideTooltip($event)"
     >
       <i class="fab fa-github fa-2x"></i>
+      <span class="tooltip-text">github</span>
     </a>
     <a
       href="https://www.instagram.com/palguna_manchale/?hl=en"
       target="_blank"
       rel="noopener noreferrer"
       class="pf-text-pink-500 pf-transition-colors pf-duration-300 insta-link"
+      (mouseenter)="showTooltip($event, 'Instagram')"
+      (mouseleave)="hideTooltip($event)"
     >
       <i class="fab fa-instagram fa-2x"></i>
+      <span class="tooltip-text">Instagram</span>
     </a>
 
     <a
       href="mailto:palgunamanchalel@gmail.com"
       class="pf-text-gray-800 pf-transition-colors pf-duration-300 mail-link"
+      (mouseenter)="showTooltip($event, 'E-mail')"
+      (mouseleave)="hideTooltip($event)"
     >
       <i class="fas fa-envelope fa-2x"></i>
+      <span class="tooltip-text">mail</span>
     </a>
   </div>
   <a

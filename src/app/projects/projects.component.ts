@@ -23,7 +23,8 @@ export class ProjectsComponent {
   projects: Project[] = [
     {
       name: 'Todo-List',
-      description: 'This is a brief description of Project 1.',
+      description:
+        'Todo List app allows users to manage tasks by adding, prioritizing, and tracking due dates with an intuitive interface.',
       technologies: 'Technology used: Angular',
       imageUrl: 'assets/images/todo-list.png',
       websiteUrl: 'https://personal-todos-list.netlify.app/',
@@ -31,7 +32,8 @@ export class ProjectsComponent {
     },
     {
       name: 'Github-User-Search',
-      description: 'This is a brief description of Project 1.',
+      description:
+        ' GitHub User Search app enables users to search for GitHub profiles, displaying detailed information.',
       technologies: 'Technology used: Angular',
       imageUrl: 'assets/images/githubUserSearch.png',
       websiteUrl: 'https://find-github-user-repos.netlify.app/',
