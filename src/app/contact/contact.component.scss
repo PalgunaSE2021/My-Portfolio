@@ -2,6 +2,25 @@
   @apply pf-text-xl;
 }
 
+.fb-link,
+.x-link,
+.linkedin-link,
+.git-link,
+.insta-link,
+.mail-link {
+  @apply pf-transition-all pf-duration-300;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.fb-link:hover,
+.x-link:hover,
+.linkedin-link:hover,
+.git-link:hover,
+.insta-link:hover,
+.mail-link:hover {
+  transform: translateY(-5px) scale(1.1) translateX(5px) scale(1.1);
+}
+
 .fb-link {
   &:hover {
     @apply pf-text-blue-900;
@@ -54,4 +73,39 @@
 
 .resume-download-link:hover {
   background-color: #9d9fa0;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  @apply pf-bg-slate-600;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: -120%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+a:hover .tooltip-text {
+  visibility: visible;
+}
+
+.show-tooltip .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 750px) {
+  .mobile-layout {
+    @apply pf-mt-0-px;
+  }
+
+  // .resume-download-link {
+  //   width: 50%;
+  // }
 }
